@@ -1,3 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body onmousedown="{
    
   document.myGravity = -15
@@ -50,31 +71,28 @@ function myCheckAll(){
 if (parseInt(document.getElementById('mySpan01').style.top) -5  > window.innerHeight) { 
     document.getElementById('mySpan01').style.top = '100px' 
     alert('You Lose!')
-    location = 'T4A01-game-level1-Shaan.html'
+    location = 'T4A17-flappy-bird-name.html'
 }
 
 
   if(myHitOther('mySpan01', 'mySpan02')){
     document.getElementById('mySpan02').style.left = '-400px'
     alert('You Lose!')
-    location = 'T4A01-game-level1-Shaan.html'
+    location = 'T4A17-flappy-bird-name.html'
   }
 
   if(myHitOther('mySpan01', 'mySpan03')){
     document.getElementById('mySpan03').style.left = '-400px'
     alert('You Lose!')
-    location = 'T4A01-game-level1-Shaan.html'
+    location = 'T4A17-flappy-bird-name.html'
   }
 
   if(myHitOther('mySpan01', 'mySpan04')){
     document.getElementById('mySpan04').style.left = '-400px'
     alert('You Lose!')
-    location = 'T4A01-game-level1-Shaan.html'
+    location = 'T4A17-flappy-bird-name.html'
   }
- if(myHitOther('mySpan01', 'mySpan05')){
-    document.getElementById('mySpan05').style.left = '-400px'
-    alert('You Lose!')
-    location = 'T4A01-game-level1-Shaan.html'
+
 
 
   if(myHitOther('mySpan01', 'mySpan200')){
@@ -97,8 +115,6 @@ function myXAuto(){
   document.getElementById('mySpan03').style.left = parseInt(document.getElementById('mySpan03').style.left) + document.myXmove 
 
    document.getElementById('mySpan04').style.left = parseInt(document.getElementById('mySpan04').style.left) + document.myXmove 
-   
-   document.getElementById('mySpan05').style.left = parseInt(document.getElementById('mySpan05').style.left) + document.myXmove 
  
 
   myCheckAll()
@@ -115,7 +131,7 @@ document.myXtimer = setInterval( myXAuto , document.myXspeed);
 
 
 
-<h1 align=center>T4A17-flappy-bird-name.html v0.4.2 </h1>
+<h1 align=center>T4A17-flappy-bird-name.html</h1>
 
 
 
@@ -128,16 +144,11 @@ document.myXtimer = setInterval( myXAuto , document.myXspeed);
 
 
 <span title="1" id="mySpan01" style="position:absolute; left:100; top:150; width:45; height:30">
-   <img src="pngkit_car-top-view-png_546494.png" width=50> </span><br>
-   
+   <img src="pngkit_car-top-view-png_546494.png" width=50></span><br>
 <span title="2"  id="mySpan02" style="position:absolute; left:900; top:100; width:45; height:30"> 
    Span 2 </span><br>
-   
 <span title="3"  id="mySpan03" style="position:absolute; left:900; top:300; width:45; height:30"> 
    Span 3 </span><br>
 
 <span title="4"  id="mySpan04" style="position:absolute; left:1100; top:150; width:45; height:30"> 
-   Span 4 </span><br>
-   
-  <span title="5"  id="mySpan05" style="position:absolute; left:1400; top:150; width:45; height:30"> 
-   Span 5 </span><br>
+   Span 3 </span><br>
